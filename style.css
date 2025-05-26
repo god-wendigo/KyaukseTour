@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/11542516/pexels-photo-11542516.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+}

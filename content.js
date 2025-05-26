@@ -1,0 +1,1 @@
+let contents = document.getElementById('contents')
