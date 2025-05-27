@@ -1,9 +1,9 @@
-import { lightblue, primary, secondary } from './color.js';
+import { COLORS, FONTS } from './color.js';
 
 export class Header {
     static navbar(text, imgSrc) {
         const mainHeader = document.getElementById("navbar");
-        mainHeader.style.backgroundColor = lightblue;
+        mainHeader.style.backgroundColor = COLORS.lightBlue;
         mainHeader.style.backdropFilter = "blur(10px)"
         mainHeader.style.display = "flex";
         mainHeader.style.padding = "10px";
@@ -19,13 +19,14 @@ export class Header {
 
         const logoImg = document.createElement("img");
         logoImg.src = imgSrc;
-        logoImg.style.width = "4rem";
-        logoImg.style.height = "4rem";
-        logoImg.classList.add("filter");
+        logoImg.style.width = "4.5rem";
+        logoImg.style.height = "4.5rem";
+        logoImg.style.filter = "invert(1) brightness(2)"
+
 
         const logoTxt = document.createElement("span");
         logoTxt.textContent = text;
-        logoTxt.style.fontFamily = "Myay Phyu";
+        logoTxt.style.fontFamily = FONTS.consolas;
         logoTxt.style.fontSize = "4rem";
         logoTxt.style.fontWeight = "600";
         logoTxt.style.color = "white";

@@ -1,5 +1,10 @@
+import { FONTS } from "./color.js";
+
 export class MainPage {
     static showMainPage(caption) {
+
+        // font variable
+        
 
         const contents = document.getElementById('contents');
         contents.style.display  = "flex";
@@ -33,7 +38,7 @@ export class MainPage {
         searchBar.style.border = "none";
         searchBar.style.paddingLeft = "2rem";
         searchBar.style.alignSelf = "center"
-        searchBar.style.fontFamily = "Consolas";
+        searchBar.style.fontFamily = FONTS.consolas;
         searchBar.style.fontSize = "1.7rem";
         searchBar.addEventListener('focus', () => {
             searchBar.style.outline = "red";
@@ -47,14 +52,14 @@ export class MainPage {
         //dropdown list
         const dropList = document.createElement('select');
         dropList.style.width = "35vw";
-        dropList.style.height = "3rem";
-        
+        dropList.style.height = "3rem"
         dropList.style.borderRadius = "50px";
         dropList.style.border = "none";
         dropList.style.padding = "0 2rem";
         dropList.style.lineHeight = "3rem";
         dropList.style.fontSize = "1.7rem";
-        dropList.style.fontFamily = "Consolas"
+        dropList.style.fontFamily = FONTS.consolas;
+        dropList.classList.add("no-arrow");
 
         const items = [ "All Category", "Food", "Cafe", "Restaurant", "Shopping", "Drink", "Culture"];
 
@@ -75,7 +80,7 @@ export class MainPage {
         button.style.border = "none";
         button.style.height = "3rem";
         button.style.fontSize = "1.7rem";
-        button.style.fontFamily = "Consolas";
+        button.style.fontFamily = "'Consolas', 'Courier New', monospace";
         button.style.marginTop = "3rem";
         
 
